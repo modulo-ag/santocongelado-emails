@@ -3,7 +3,7 @@
 Este repositório publica, no GitHub Pages, os HTMLs de e-mail marketing da Santo Congelado:
 https://modulo-ag.github.io/santocongelado-emails/
 
-**Endereço:** o repositório foi para a organização `modulo-ag` (16/11/2026). O endereço antigo `leonardoffaria.github.io` dá 404 e não redireciona: imagem com ele sai quebrada no e-mail.
+**Endereço:** o repositório está na organização `modulo-ag` (visto em 16/11/2026). O endereço antigo `leonardoffaria.github.io` dá 404 e não redireciona: imagem com ele sai quebrada no e-mail.
 
 - **Disparo:** pelo Centro de Comando (MKT Tools › Santo Congelado › E-mail). O CC importa a peça pelo endereço publicado aqui; quem envia é o Módulo Works, pelo Amazon SES, com o remetente `marketing@news.santocongelado.com.br`.
 - **Modelo visual:** Figma "Santo Congelado · Template de e-mail marketing" — https://www.figma.com/design/YnXepi7zBlIdhyfUp3XnvH. O Figma é a referência; o que sai é o HTML desta pasta. Mudou o Figma, a mudança precisa vir para o HTML.
