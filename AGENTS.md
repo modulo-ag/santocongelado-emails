@@ -1,7 +1,9 @@
 # AGENTS.md — Santo Congelado · e-mails
 
 Este repositório publica, no GitHub Pages, os HTMLs de e-mail marketing da Santo Congelado:
-https://leonardoffaria.github.io/santocongelado-emails/
+https://modulo-ag.github.io/santocongelado-emails/
+
+**Endereço:** o repositório foi para a organização `modulo-ag` (16/11/2026). O endereço antigo `leonardoffaria.github.io` dá 404 e não redireciona: imagem com ele sai quebrada no e-mail.
 
 - **Disparo:** pelo Centro de Comando (MKT Tools › Santo Congelado › E-mail). O CC importa a peça pelo endereço publicado aqui; quem envia é o Módulo Works, pelo Amazon SES, com o remetente `marketing@news.santocongelado.com.br`.
 - **Modelo visual:** Figma "Santo Congelado · Template de e-mail marketing" — https://www.figma.com/design/YnXepi7zBlIdhyfUp3XnvH. O Figma é a referência; o que sai é o HTML desta pasta. Mudou o Figma, a mudança precisa vir para o HTML.
@@ -21,7 +23,7 @@ scripts/check-email-opt-out.mjs
 1. Copiar a pasta da peça mais parecida (ex.: `quarta-da-dieta-0411`) com o nome novo `<tema>-<ddmm>`.
 2. No `index.html` da peça, trocar: `<title>` (igual ao assunto), pré-cabeçalho (o `div` escondido logo depois do `<body>`), texto, cupom, botão, nota legal e vitrine.
 3. Banner: JPG 1200×600 em `img/`, **sempre com nome novo**. O Gmail guarda a imagem pelo endereço; nome repetido mostra a imagem antiga.
-4. Imagens com endereço absoluto: `https://leonardoffaria.github.io/santocongelado-emails/<pasta>/img/<arquivo>`. Ícones e logo vêm de `assets/`.
+4. Imagens com endereço absoluto: `https://modulo-ag.github.io/santocongelado-emails/<pasta>/img/<arquivo>`. Ícones e logo vêm de `assets/`.
 5. Links com UTM: `?utm_source=email&utm_medium=crm&utm_campaign=<tema>-AAAA-MM-DD`.
 6. Rodar `node scripts/check-email-opt-out.mjs` e só seguir com OK.
 7. Acrescentar a peça no topo do `index.html` da raiz.
@@ -47,7 +49,7 @@ scripts/check-email-opt-out.mjs
 
 1. **Base:** Works › Santo Congelado › CRM › Extrair base. Escolher os segmentos da peça e baixar o CSV. Exportar base pede motivo e permissão de dado sensível.
 2. **Campanha:** CC › MKT Tools › Santo Congelado › E-mail › Nova campanha.
-   - Mensagem: assunto, pré-cabeçalho (o mesmo texto que está na peça) e o endereço publicado da peça, `https://leonardoffaria.github.io/santocongelado-emails/<pasta>/`.
+   - Mensagem: assunto, pré-cabeçalho (o mesmo texto que está na peça) e o endereço publicado da peça, `https://modulo-ag.github.io/santocongelado-emails/<pasta>/`.
    - Público: subir o CSV e apontar as colunas de e-mail e de primeiro nome.
    - Envio: mandar o teste primeiro, conferir no celular e no computador, e só então agendar para a base.
 
